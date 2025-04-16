@@ -29,7 +29,7 @@ export class UserService {
     if (result.length === 0) {
       return false;
     }
-    return result;
+    return { users: result };
   }
 
   async update(id: number, userDto: Partial<CreateUserDto>) {
